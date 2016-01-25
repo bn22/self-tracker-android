@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uw.bn22.self_tracker.recording">
+
+    <TextView
+        android:id="@+id/txtSummaryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New User Entry"
+        android:textSize="24dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/txtDescriptin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/txtDescriptin"
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/txtDescriptin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:maxLines="6"
+        android:layout_marginTop="138dp"
+        android:layout_below="@+id/txtSummaryTitle"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:text="         " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Time"
+        android:textSize="18dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignTop="@+id/editText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Time "
+        android:textSize="18dp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:maxLines="1"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/txtDescriptin"
+        android:layout_alignStart="@+id/txtDescriptin"
+        android:text="         "
+        android:background="@null"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:maxLines="1"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:text="         " />
+
+</RelativeLayout>
