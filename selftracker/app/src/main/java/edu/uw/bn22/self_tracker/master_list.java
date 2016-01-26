@@ -1,6 +1,8 @@
 package edu.uw.bn22.self_tracker;
 
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -36,6 +38,7 @@ public class master_list extends Fragment  {
     //Creates a EntryListener that listens for clicks in the list view
     public interface EntryListener {
         public void onSelected(bubble_tea s);
+        public void moveSummary();
     }
 
     public master_list() {
@@ -108,6 +111,15 @@ public class master_list extends Fragment  {
             @Override
             public void onClick(View v) {
                 new recording().show(getFragmentManager(), "dialog");
+            }
+        });
+
+        //Returns to the summary screen when clicked
+        Button button1 = (Button) rootView.findViewById(R.id.btnSummary);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((EntryListener) getActivity()).moveSummary();
             }
         });
 
