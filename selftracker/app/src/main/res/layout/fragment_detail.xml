@@ -5,9 +5,107 @@
     tools:context="edu.uw.bn22.self_tracker.detail">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18dp"
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/txtCount" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="18dp"
+        android:id="@+id/textView6"
+        android:gravity="center"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/txtCount"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textSize="18dp"
+        android:id="@+id/textView7"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/txtRating"
+        android:layout_toStartOf="@+id/txtRating" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="18dp"
+        android:id="@+id/addCount"
+        android:gravity="center"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="122dp"
+        android:layout_marginStart="122dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="18dp"
+        android:id="@+id/txtCount"
+        android:gravity="center"
+        android:layout_above="@+id/textView7"
+        android:layout_alignLeft="@+id/addCount"
+        android:layout_alignStart="@+id/addCount" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textSize="18dp"
+        android:id="@+id/txtRating"
+        android:gravity="center"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignLeft="@+id/txtCount"
+        android:layout_alignStart="@+id/txtCount" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="18dp"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="18dp"
+        android:id="@+id/txtTime"
+        android:gravity="center"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
 
 </RelativeLayout>

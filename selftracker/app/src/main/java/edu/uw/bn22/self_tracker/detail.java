@@ -25,6 +25,20 @@ public class detail extends Fragment {
         // Inflate the layout for this fragment
         final View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
 
+        //Updates the detail page with the information from the EntryListener
+        Bundle bundle = getArguments();
+        if(bundle != null) {
+            TextView nameView = (TextView) rootView.findViewById(R.id.addCount);
+            TextView ratingView = (TextView) rootView.findViewById(R.id.txtRating);
+            TextView locationView = (TextView) rootView.findViewById(R.id.txtCount);
+            TextView timeView = (TextView) rootView.findViewById(R.id.txtTime);
+
+            nameView.setText(bundle.getString("name"));
+            timeView.setText(bundle.getString("time"));
+            ratingView.setText(bundle.getString("rating"));
+            locationView.setText(bundle.getString("location"));
+        }
+
         return rootView;
     }
 }

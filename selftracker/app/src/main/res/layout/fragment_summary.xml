@@ -8,7 +8,7 @@
         android:id="@+id/txtSummaryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Summary of User Entries"
+        android:text="Summary"
         android:textSize="24dp"
         android:paddingBottom="10dp"
         android:layout_alignParentLeft="true"
@@ -17,5 +17,52 @@
         android:layout_alignParentEnd="false"
         android:gravity="center"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/addCount"
+        android:gravity="center"
+        android:layout_below="@+id/txtSummaryTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/txtCount"
+        android:layout_toEndOf="@+id/txtCount" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount of Entries"
+        android:textSize="18dp"
+        android:id="@+id/txtCount"
+        android:gravity="center"
+        android:layout_below="@+id/txtSummaryTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ratings Above 5"
+        android:textSize="18dp"
+        android:id="@+id/textView8"
+        android:gravity="center"
+        android:layout_below="@+id/txtCount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/addAbove"
+        android:gravity="center"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/txtCount"
+        android:layout_toEndOf="@+id/txtCount" />
 
 </RelativeLayout>
